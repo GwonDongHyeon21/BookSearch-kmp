@@ -2,6 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=kotlin,androidstudio,macos,swift
 
 ### Kotlin ###
+.kotlin
+
 # Compiled class file
 *.class
 
