@@ -29,7 +29,10 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            //put your multiplatform dependencies here
+            // ktor
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.serialization.kotlinx.json)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -41,7 +44,7 @@ android {
     namespace = "com.example.booksearch"
     compileSdk = 34
     defaultConfig {
-        minSdk = 34
+        minSdk = 31
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
